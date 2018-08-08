@@ -1,0 +1,34 @@
+apply plugin: 'com.android.library'
+
+group = 'com.github.BharatGad3'
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 32
+        consumerProguardFiles 'proguard-joda-time.pro'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Support
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+
+    // Third-party
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.7.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.7.0'
+    implementation 'joda-time:joda-time:2.9.9'
+
+    // Test
+    testCompile 'junit:junit:4.12'
+}
