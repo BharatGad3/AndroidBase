@@ -18,7 +18,7 @@ import androidx.annotation.CallSuper;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
-import androidx.fragment.FragmentManager;
+import androidx.fragment.app.FragmentManager;
 
 import com.base.core.permission.PermissionManager;
 import com.base.core.presenter.BasePresenter;
