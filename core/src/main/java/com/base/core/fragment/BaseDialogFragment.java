@@ -81,6 +81,7 @@ public abstract class BaseDialogFragment<T extends BasePresenter> extends Dialog
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mFragmentHandler = new BaseFragmentHandler<T>(this);
+        mFragmentHandler.onCreate(savedInstanceState);
     }
 
     @Override
