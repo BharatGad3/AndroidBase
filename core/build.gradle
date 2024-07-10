@@ -17,7 +17,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     // Support
-    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
 
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
 
